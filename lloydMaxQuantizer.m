@@ -9,7 +9,7 @@ function [xq, centers, D] = lloydMaxQuantizer(x, N, min_value, max_value)
     centers = flip(centers);
     centers = [min_value centers max_value];
     
-    %normalise input between -1 and 1 values
+    %normalise input between min and max values
     x = normalize(x, 'range', [min_value max_value]);
     
     % distortion for every loop, begins with 0 and 1 for first loop
@@ -72,5 +72,6 @@ function [xq, centers, D] = lloydMaxQuantizer(x, N, min_value, max_value)
     D(2) = [];
     centers(1) = [];
     centers(length(centers)) = [];
-    xq = xq'; 
+    xq = xq';
+    fprintf('Number of iterations: %d\n', k);
 end

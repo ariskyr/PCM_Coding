@@ -8,7 +8,8 @@ Details about the project can be found in the report.pdf which is written in gre
 
 Code written in Matlab, version 2021b. 
 
-All functions are run from the runfilePCM.m 
+algorithms for a normal distribution source can be run from the runfilePCMA.m 
+algorithm for an AR(5) auto regressive model can be run from the runfilePCMB.m
 ## Author
 
 - [@Aris_Kyriakopoulos](https://github.com/SneakyTattas)
@@ -18,6 +19,7 @@ All functions are run from the runfilePCM.m
 - 0.1
   - Initial Commit
   * Lloyd-Max quantizer done
+  * SQNR calculator and MSE for both sources
 
 ## Known Issues
 
